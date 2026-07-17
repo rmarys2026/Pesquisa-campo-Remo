@@ -15,7 +15,7 @@
  */
 
 const APPS_SCRIPT_CONFIG = {
-  apiUrl: "COLE_AQUI_A_URL_DO_SEU_APP_DA_WEB", // TODO: substitua pela URL /exec gerada no passo 11 das instruções
+  apiUrl: "https://script.google.com/macros/s/AKfycbyg6gyyA6gePEf7cNqs0ujSd-USSPH-cclDcGWFAZc4Yt1UUhTbJ8EtSQn6KFoELH1MuQ/exec", // TODO: substitua pela URL /exec gerada no passo 11 das instruções
   idColumn: "response_id",
 };
 
