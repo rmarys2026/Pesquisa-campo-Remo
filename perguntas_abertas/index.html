@@ -109,6 +109,7 @@ Finalizar Pesquisa
                 btnProxima.disabled = false;
                 return;
             }
+            localStorage.setItem('remo_clima_2026_concluido', 'true');
             document.getElementById('conteudo-principal').innerHTML = `
                 <div class="flex flex-col items-center justify-center min-h-[50vh] text-center">
                     <span class="material-symbols-outlined text-[#1FC272] text-7xl mb-4" style="font-variation-settings: 'FILL' 1;">verified</span>

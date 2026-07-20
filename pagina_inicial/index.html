@@ -224,8 +224,8 @@
 </div>
 </section>
 <!-- Final Call to Action -->
-<section class="max-w-container-max mx-auto px-gutter pb-xl">
-<div class="bg-surface-container-low rounded-xl p-lg text-center border border-outline-variant">
+<section class="max-w-container-max mx-auto px-gutter pb-xl" id="secao-cta">
+<div class="bg-surface-container-low rounded-xl p-lg text-center border border-outline-variant" id="conteudo-cta">
 <h4 class="font-headline-lg text-headline-lg text-primary mb-sm">Pronto para começar?</h4>
 <p class="font-body-md text-body-md text-on-surface-variant mb-md max-w-[560px] mx-auto">
                     Leva cerca de 8 minutos. Suas respostas são 100% anônimas e ajudam a construir uma Remo Engenharia melhor para todos.
@@ -251,6 +251,18 @@
 </div>
 </div>
 </footer>
+<script>
+        // Verifica se esta pessoa já concluiu a pesquisa neste navegador
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('remo_clima_2026_concluido') === 'true') {
+                document.getElementById('conteudo-cta').innerHTML = `
+                    <span class="material-symbols-outlined text-[#1FC272] text-5xl mb-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <h4 class="font-headline-lg text-headline-lg text-primary mb-sm">Você já respondeu esta pesquisa</h4>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-[560px] mx-auto">Obrigado pela sua participação! Cada colaborador responde apenas uma vez. Se você acredita que isso é um engano, entre em contato com o RH ou a TI da sua unidade.</p>
+                `;
+            }
+        });
+    </script>
 <script>
         // Simple micro-interaction for the CTA button pulse
         document.addEventListener('DOMContentLoaded', () => {
