@@ -156,40 +156,7 @@
 <div class="absolute -bottom-12 -left-12 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl opacity-50"></div>
 </div>
 <!-- Methodology & Security Section -->
-<section class="max-w-container-max mx-auto px-gutter py-xl hidden" id="secao-metodologia">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-<!-- Methodology Card -->
-<div class="glass-card p-md rounded-xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-sm">
-<span class="material-symbols-outlined text-primary">analytics</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary mb-xs">Metodologia</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        O instrumento foi desenvolvido tomando como referência as principais metodologias internacionais de clima e engajamento (GPTW e Gallup), adaptadas à realidade operacional da REMO.
-                    </p>
-</div>
-<!-- Privacy Card -->
-<div class="glass-card p-md rounded-xl border-l-4 border-secondary-container shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-sm">
-<span class="material-symbols-outlined text-secondary">lock</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Confidencialidade</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        Suas respostas são tratadas de forma agregada e confidencial. O sistema garante o anonimato individual para assegurar um ambiente de total segurança psicológica.
-                    </p>
-</div>
-<!-- Impact Card -->
-<div class="glass-card p-md rounded-xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-sm">
-<span class="material-symbols-outlined text-tertiary-container">rocket_launch</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-tertiary mb-xs">Impacto Real</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        Sua voz direciona melhorias reais em segurança, liderança e cultura. A pesquisa é o primeiro passo para construirmos uma Remo Engenharia ainda melhor.
-                    </p>
-</div>
-</div>
-</section>
+
 <!-- Visual Anchor: Context Image -->
 <section class="w-full bg-surface-container-highest py-lg">
 <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
@@ -215,7 +182,7 @@
 </div>
 <div class="order-1 md:order-2">
 <div class="rounded-xl overflow-hidden shadow-xl aspect-video relative group">
-<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A professional engineering office environment with diverse team members collaborating around a blueprints table, soft morning light through large windows, modern corporate aesthetic in shades of blue and white, 4k cinematic photography style reflecting trust and professional integrity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2I05FZa9JZY2hfdUb-VqG6-XaQe3jmyzOATm1sWg4u6bNnWGVWvOgmcMNr-2mlqHewlO69FsPilEtdSg8XZ_-WXu_TpsLo-l0Kh9tj44aa9lXfT0ENMivwTIvJzREu9f_EScR-VxWL65n1wzOtEH3txl-6lx6dsvP-pSJP-BwGzJNY6j_jHrd_-UWO1Uql-zQ9h2icbuyo2U3iNYdq6AWUvo_vDJKRnoRJDyxL-KdVCbS-g6rm5E">
+<img alt="Equipe da Remo Engenharia em campo, colaboradores com uniforme e capacete de segurança" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="../assets/img/foto-equipe-remo.png">
 <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
 </div>
 </div>
@@ -320,6 +287,48 @@
 </div>
 </div>
 </div>
+<!-- Sobre a Pesquisa Modal -->
+<div class="fixed inset-0 bg-black/50 z-[100] hidden items-center justify-center p-gutter" id="sobre-modal">
+<div class="bg-surface-bright rounded-xl shadow-xl max-w-[720px] w-full max-h-[80vh] overflow-y-auto">
+<div class="flex items-center justify-between p-md border-b border-outline-variant sticky top-0 bg-surface-bright">
+<h3 class="font-headline-md text-headline-md text-primary">Sobre a Pesquisa</h3>
+<button class="p-xs text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" id="btn-fechar-sobre" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="glass-card p-md rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-xs">Metodologia</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+O instrumento foi desenvolvido tomando como referência as principais metodologias internacionais de clima e engajamento (GPTW e Gallup), adaptadas à realidade operacional da REMO.
+</p>
+</div>
+<div class="glass-card p-md rounded-xl border-l-4 border-secondary-container shadow-sm">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-secondary">lock</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-secondary mb-xs">Confidencialidade</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+Suas respostas são tratadas de forma agregada e confidencial. O sistema garante o anonimato individual para assegurar um ambiente de total segurança psicológica.
+</p>
+</div>
+<div class="glass-card p-md rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center mb-sm">
+<span class="material-symbols-outlined text-tertiary-container">rocket_launch</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-tertiary mb-xs">Impacto Real</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+Sua voz direciona melhorias reais em segurança, liderança e cultura. A pesquisa é o primeiro passo para construirmos uma Remo Engenharia ainda melhor.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <script>
         (function () {
             const modal = document.getElementById('faq-modal');
@@ -341,12 +350,23 @@
                 if (e.target === modal) fechar();
             });
 
-            // "Sobre a Pesquisa": revela a seção de Metodologia/Confidencialidade/Impacto e rola até ela
+            // "Sobre a Pesquisa": abre modal com os 3 cards
+            const modalSobre = document.getElementById('sobre-modal');
+            const abrirSobre = () => {
+                modalSobre.classList.remove('hidden');
+                modalSobre.classList.add('flex');
+            };
+            const fecharSobre = () => {
+                modalSobre.classList.add('hidden');
+                modalSobre.classList.remove('flex');
+            };
             document.getElementById('link-sobre-pesquisa').addEventListener('click', (e) => {
                 e.preventDefault();
-                const secao = document.getElementById('secao-metodologia');
-                secao.classList.remove('hidden');
-                secao.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                abrirSobre();
+            });
+            document.getElementById('btn-fechar-sobre').addEventListener('click', fecharSobre);
+            modalSobre.addEventListener('click', (e) => {
+                if (e.target === modalSobre) fecharSobre();
             });
         })();
     </script>
