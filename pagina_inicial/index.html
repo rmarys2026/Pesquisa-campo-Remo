@@ -121,7 +121,7 @@
 </div>
 <div class="hidden md:flex items-center gap-md">
 <a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-primary dark:border-inverse-primary pb-1 font-body-md text-body-md transition-all duration-200" href="#">Pesquisas</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#sobre-pesquisa">Sobre a Pesquisa</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#secao-metodologia" id="link-sobre-pesquisa">Sobre a Pesquisa</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-body-md text-body-md" href="#" id="link-faq">FAQ</a>
 </div>
 <div class="flex items-center gap-sm">
@@ -142,14 +142,12 @@
 </div>
 <h1 class="font-display-lg text-display-lg md:text-display-lg text-primary mb-md tracking-tight leading-tight">PESQUISA DE CLIMA ORGANIZACIONAL 2026</h1>
 <div class="bg-surface-container-lowest/50 backdrop-blur-sm rounded-xl p-md border border-outline-variant/30 mb-lg" id="sobre-pesquisa">
-<h2 class="font-headline-md text-headline-md text-primary mb-sm">OBJETIVO</h2>
 <div class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed space-y-3 text-left">
-<p>Nossa empresa cresce quando ouvimos as pessoas. E é por isso que a sua participação é tão importante.</p>
-<p>A Pesquisa de Clima Organizacional é uma oportunidade para você compartilhar, de forma sincera e confidencial, como percebe o ambiente de trabalho na REMO.</p>
-<p>Sua opinião nos ajudará a identificar nossos pontos fortes, entender onde podemos melhorar e construir ações que tornem a empresa um lugar cada vez melhor para trabalhar.</p>
-<p>Fique tranquilo(a): suas respostas são totalmente confidenciais e serão analisadas apenas de forma agrupada, sem qualquer identificação individual.</p>
-<p>Esta pesquisa foi elaborada com base nas melhores práticas internacionais de clima e engajamento, adaptadas à realidade da REMO, para que possamos evoluir juntos de forma consistente.</p>
-<p>Agradecemos desde já pela sua participação. Sua voz faz a diferença!</p>
+<p class="font-bold text-on-surface">Queremos ouvir você!</p>
+<p>Nossa empresa cresce quando ouvimos as pessoas. Por isso, sua participação nesta pesquisa é muito importante.</p>
+<p>Este é um espaço para você compartilhar, de forma sincera e confidencial, como percebe o ambiente de trabalho na REMO. Sua opinião nos ajudará a reconhecer nossos pontos fortes e identificar oportunidades para construir uma empresa cada vez melhor para todos.</p>
+<p>Fique tranquilo(a): suas respostas são confidenciais e serão analisadas apenas de forma agrupada, sem qualquer identificação individual.</p>
+<p>Obrigado por participar. Sua voz constrói a REMO que queremos.</p>
 </div>
 </div>
 </div>
@@ -158,7 +156,7 @@
 <div class="absolute -bottom-12 -left-12 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl opacity-50"></div>
 </div>
 <!-- Methodology & Security Section -->
-<section class="max-w-container-max mx-auto px-gutter py-xl">
+<section class="max-w-container-max mx-auto px-gutter py-xl hidden" id="secao-metodologia">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
 <!-- Methodology Card -->
 <div class="glass-card p-md rounded-xl shadow-sm hover:shadow-md transition-shadow">
@@ -341,6 +339,14 @@
             document.getElementById('btn-fechar-faq').addEventListener('click', fechar);
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) fechar();
+            });
+
+            // "Sobre a Pesquisa": revela a seção de Metodologia/Confidencialidade/Impacto e rola até ela
+            document.getElementById('link-sobre-pesquisa').addEventListener('click', (e) => {
+                e.preventDefault();
+                const secao = document.getElementById('secao-metodologia');
+                secao.classList.remove('hidden');
+                secao.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         })();
     </script>
